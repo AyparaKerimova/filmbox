@@ -1,0 +1,58 @@
+.page { background: #141414; min-height: 100vh; }
+.hero {
+  position: relative;
+  height: 88vh;
+  min-height: 520px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 48px 72px;
+  overflow: hidden;
+}
+.heroGradient {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 60%, #141414 100%),
+    linear-gradient(to right, rgba(0,0,0,0.75) 0%, transparent 55%);
+}
+.heroContent { position: relative; z-index: 1; max-width: 520px; }
+.heroSkeleton { position: absolute; inset: 0; background: #1a1a1a; animation: pulse 1.4s ease-in-out infinite; }
+.badge {
+  display: inline-block;
+  background: #e50914; color: #fff;
+  font-size: 11px; font-weight: 600; letter-spacing: 2px;
+  padding: 4px 10px; border-radius: 2px; margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.heroTitle {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 76px; line-height: 0.9;
+  color: #fff; margin: 0 0 16px;
+}
+.heroMeta { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 13px; }
+.match { color: #46d369; font-weight: 600; }
+.year, .dim { color: #aaa; }
+.ratingBadge { border: 1px solid #aaa; color: #aaa; padding: 1px 6px; font-size: 11px; border-radius: 2px; }
+.heroDesc { font-size: 14px; color: #ccc; line-height: 1.65; margin-bottom: 28px; }
+.heroBtns { display: flex; gap: 12px; }
+.btnPlay {
+  display: flex; align-items: center; gap: 8px;
+  background: #fff; color: #000; border: none;
+  padding: 12px 28px; border-radius: 4px;
+  font-size: 16px; font-weight: 600; cursor: pointer;
+  transition: background 0.2s;
+}
+.btnPlay:hover { background: rgba(255,255,255,0.85); }
+.btnMore {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(109,109,110,0.7); color: #fff; border: none;
+  padding: 12px 28px; border-radius: 4px;
+  font-size: 16px; font-weight: 600; cursor: pointer;
+  transition: background 0.2s;
+}
+.btnMore:hover { background: rgba(109,109,110,0.5); }
+.rows {
+  padding: 0 48px 48px;
+  margin-top: -48px;
+  position: relative; z-index: 2;
+}
+@keyframes pulse { 0%,100%{opacity:1}50%{opacity:.4} }

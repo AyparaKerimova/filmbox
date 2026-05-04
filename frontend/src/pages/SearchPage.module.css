@@ -1,0 +1,12 @@
+.page { background:#141414;min-height:100vh;padding:100px 48px 48px;color:#e5e5e5; }
+.searchBar { display:flex;align-items:center;gap:12px;background:#1a1a1a;border:1px solid #333;border-radius:4px;padding:14px 20px;margin-bottom:28px; }
+.searchBar input { background:none;border:none;color:#fff;font-size:16px;flex:1;outline:none; }
+.searchBar input::placeholder { color:#777; }
+.genres { display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px; }
+.pill { padding:8px 20px;border-radius:20px;font-size:13px;font-weight:500;cursor:pointer;transition:background .2s;border:1px solid #333;background:#1f1f1f;color:#e5e5e5; }
+.pill:hover { background:#2a2a2a; }
+.pill.active { background:#e50914;border-color:#e50914;color:#fff; }
+.grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px; }
+.skeleton { aspect-ratio:2/3;border-radius:4px;background:#1f1f1f;animation:pulse 1.4s ease-in-out infinite; }
+.empty { color:#777;font-size:16px;margin-top:40px; }
+@keyframes pulse { 0%,100%{opacity:1}50%{opacity:.4} }

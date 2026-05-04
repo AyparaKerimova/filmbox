@@ -1,0 +1,9 @@
+.page { background:#141414;min-height:100vh;padding:100px 48px 48px;color:#e5e5e5; }
+.header { margin-bottom:32px; }
+.title { font-family:'Bebas Neue',cursive;font-size:42px;color:#fff;margin:0 0 4px; }
+.count { color:#777;font-size:14px;margin:0; }
+.grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px; }
+.skeleton { aspect-ratio:2/3;border-radius:4px;background:#1f1f1f;animation:pulse 1.4s ease-in-out infinite; }
+.empty { display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:60vh;gap:16px;color:#e5e5e5;text-align:center; }
+.loginBtn { background:#e50914;color:#fff;border:none;padding:10px 24px;border-radius:4px;cursor:pointer;text-decoration:none;font-size:14px;font-weight:500; }
+@keyframes pulse { 0%,100%{opacity:1}50%{opacity:.4} }

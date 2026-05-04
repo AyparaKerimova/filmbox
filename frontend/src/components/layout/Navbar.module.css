@@ -1,0 +1,53 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 48px;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  transition: background 0.3s;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+}
+.scrolled { background: #141414; }
+.logo {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 34px;
+  color: #e50914;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0; padding: 0;
+}
+.links a {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.links a:hover { opacity: 1; }
+.right { display: flex; align-items: center; gap: 16px; }
+.iconBtn { background: none; border: none; color: #e5e5e5; font-size: 18px; cursor: pointer; }
+.avatar {
+  width: 34px; height: 34px; border-radius: 4px;
+  background: #e50914;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 600; color: #fff; cursor: pointer;
+}
+.logoutBtn {
+  background: none; border: 1px solid #555; border-radius: 4px;
+  color: #e5e5e5; font-size: 13px; padding: 5px 12px; cursor: pointer;
+  transition: background 0.2s;
+}
+.logoutBtn:hover { background: rgba(255,255,255,0.1); }
+.loginBtn {
+  background: #e50914; color: #fff; border-radius: 4px;
+  font-size: 14px; font-weight: 500; padding: 7px 16px;
+  text-decoration: none; transition: background 0.2s;
+}
+.loginBtn:hover { background: #c40812; }
